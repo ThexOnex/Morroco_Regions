@@ -47,6 +47,7 @@ while len(guessed_states) < 13:
             word.penup()
             answer_row = data[data.region == user_answer]
             word.goto(int(answer_row.x), int(answer_row.y))
-            word.write(answer_row.region.item())
+            word.write(answer_row.region.item(), font=('Helvetica', 8))
 
 
+# screen.mainloop()
